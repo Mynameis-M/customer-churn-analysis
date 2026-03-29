@@ -23,14 +23,15 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 
 # Data Structure & Initial Checks
 
-The companies main database structure as seen below consists of four tables: table1, table2, table3, table4, with a total row count of X records. A description of each table is as follows:
-- **Table 2:**
-- **Table 3:**
-- **Table 4:**
-- **Table 5:**
+The dataset used in this project is a telecom customer churn dataset containing 7,044 customer records, including information on demographics, service usage, billing, and churn status.
 
-[Entity Relationship Diagram here]
+To support data preparation, the dataset was first loaded into a staging table (stg_Churn) and then transformed into a cleaned table (prod_Churn). This approach follows a simple ETL workflow, where raw data is processed into a structured format suitable for analysis.
 
+The final dataset used for analysis is the prod_Churn table, which contains cleaned and standardized data. An overview of its structure is shown below.
+
+<img width="387" height="790" alt="Screenshot 2026-03-29 223525" src="https://github.com/user-attachments/assets/d1959bfd-31b2-4610-9b8a-96084c4c2180" />
+
+Prior to analysis, several SQL queries were conducted to ensure data quality and better understand the dataset. The SQL scripts used for inspection and quality checks can be found here.
 
 
 # Executive Summary
